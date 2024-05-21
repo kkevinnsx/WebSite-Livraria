@@ -7,7 +7,7 @@ import FormaDaAguaFilme from '../ImagemFilmes/FormaDaAguaFilme.png';
 function CarouselFilmes() {
     return (
         <Carousel className='bg-dark '>
-            <Carousel.Item>
+            <Carousel.Item c>
                 <img className= "d-block w-100" src={CoralineFilmes} />
                 <Carousel.Caption>
                     <h3>Coraline e o Mundo Secreto</h3>

@@ -1,6 +1,6 @@
 import React from "react";
 import { Container }      from 'react-bootstrap';
-import CarouselLivros     from '../Components/CarouselLivros';
+import CarouselLivros     from '../components/CarouselLivros';
 
 const Book = () => {
     return (

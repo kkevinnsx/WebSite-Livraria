@@ -1,6 +1,6 @@
 import React from "react";
 import { Container } from 'react-bootstrap';
-import CarouselFilmes from '../Components/CarouselFilmes';
+import CarouselFilmes from '../components/CarouselFilmes';
 
 
 const Movies = () => {

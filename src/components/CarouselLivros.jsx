@@ -1,35 +1,33 @@
 import Carousel from 'react-bootstrap/Carousel';
-import CoralineLivro      from '../../ImagemLivros/CoralineLivro.jpg';
-import FormaDaAguaLivro   from '../../ImagemLivros/FormaDaAguaLivro.jpg'; 
-import HarryPotterLivros  from '../../ImagemLivros/HarryPotterLivros.png'; 
-import PercyJacksonLivros from '../../ImagemLivros/PercyJacksonLivros.jpg'; 
+import CoralineLivro      from '../ImagemLivros/CoralineLivro.jpg';
+import FormaDaAguaLivro   from '../ImagemLivros/FormaDaAguaLivro.jpg'; 
+import HarryPotterLivros  from '../ImagemLivros/HarryPotterLivros.png'; 
+import PercyJacksonLivros from '../ImagemLivros/PercyJacksonLivros.jpg'; 
 
     function CarouselLivros() {
       return (
-        <Carousel>
-          <Carousel.Item>
-            <ExampleCarouselImage text="First slide" />
-            <Carousel.Caption>
-              <h3>First slide label</h3>
-              <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-            </Carousel.Caption>
-          </Carousel.Item>
-          <Carousel.Item>
-            <ExampleCarouselImage text="Second slide" />
-            <Carousel.Caption>
-              <h3>Second slide label</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </Carousel.Caption>
-          </Carousel.Item>
-          <Carousel.Item>
-            <ExampleCarouselImage text="Third slide" />
-            <Carousel.Caption>
-              <h3>Third slide label</h3>
-              <p>
-                Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-              </p>      
-            </Carousel.Caption>
-          </Carousel.Item>
+        <Carousel className='bg-dark '>
+            <Carousel.Item c>
+                <img className= "d-block w-100" src={CoralineLivro} />
+                <Carousel.Caption>
+                    <h3>Coraline e o Mundo Secreto</h3>
+                    <p>Data de lançamento: 13 de fevereiro de 2009</p>
+                </Carousel.Caption>
+            </Carousel.Item>
+            <Carousel.Item>
+                <img className= "d-block w-100" src={HarryPotterLivros} />
+                <Carousel.Caption>
+                    <h3>Harry Potter e a Pedra Filosofal</h3>
+                    <p>Data de lançamento: 23 de novembro de 2001</p>
+                </Carousel.Caption>
+            </Carousel.Item>
+            <Carousel.Item>
+                <img className= "d-block w-100" src={PercyJacksonLivros} />
+                <Carousel.Caption>
+                    <h3>Percy Jackson e os Olimpianos</h3>
+                    <p>Data de Lançamento: 19 de dezembro de 2023</p>
+                </Carousel.Caption>
+            </Carousel.Item>
         </Carousel>
       );
     }

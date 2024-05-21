@@ -1,4 +1,4 @@
-import { Col, Row } from 'react-bootstrap';
+import { Col, FormLabel, Row } from 'react-bootstrap';
 import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
 import Form from 'react-bootstrap/Form';
@@ -22,15 +22,9 @@ function NavScrollExample() {
                 <Nav.Link href="/Movies"   >Movies </Nav.Link>
                 <Nav.Link href="/Book"     >Book   </Nav.Link>    
         </Nav>
-        <Form className="d-flex">
-            <Form.Control
-                type="search"
-                placeholder="Search"
-                className="me-2"
-                aria-label="Search"
-            />
-            <Button variant="outline-success">Search</Button>
-        </Form>
+        <FormLabel className="d-flex">
+            <Button variant='outline-info' className='col-lg-12' href="/loginPage">Fazer login</Button>
+        </FormLabel>
     </Navbar.Collapse>
 </Container>
 </Navbar>

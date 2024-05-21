@@ -5,11 +5,14 @@ import {
   Form,
   RouterProvider,
 } from "react-router-dom";
-import NavBarComponent from '../src/Components/NewNavBarComponents.jsx';
-import HomePage from './pages/HomePage.jsx';
-import Book     from './pages/Book.jsx';
-import Movies   from './pages/Movies.jsx';
+import NavBarComponent from './components/NewNavBarComponents.jsx';
+import HomePage from './pages/homepage.jsx';
+import Book     from './pages/book.jsx';
+import Movies   from './pages/movies.jsx';
+import LoginPage from './pages/LoginPage.jsx';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import './App.css'
+
 
 const router = createBrowserRouter([
     {
@@ -31,6 +34,11 @@ const router = createBrowserRouter([
     path: "/Movies",
     element: <Movies />,
   },
+
+  {
+    path: "/LoginPage",
+    element: <LoginPage />,
+  },
 ]);
 
 const main = () => {
@@ -39,8 +47,6 @@ const main = () => {
     </>
   )
 }
-
-
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
