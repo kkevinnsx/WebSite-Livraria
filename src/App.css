@@ -8,12 +8,19 @@ html{
 
 body{
   background-color: #222831 !important;
+  color: white;
 }
 
 .card{
-  background-color: #333A44;
-  border: 2px solid #FFD369;
-  border-radius: 15px;
+  background-color: #333a4444;
+  border: 3px solid #FFD369;
+  border-radius: 25px;
   color:white;
-  backdrop-filter: blur(15px);
+  backdrop-filter: blur(5px) !important;
+}
+
+.info{
+  background-color: #FFD369 !important;
+  color: black !important;
+  border: 1px solid #af892f !important;
 }

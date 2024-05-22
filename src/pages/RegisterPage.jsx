@@ -1,14 +1,8 @@
-import axios from 'axios';
-import React, { useState } from "react";
+import React from "react";
 import { Container, Row, Col, Form, Button } from 'react-bootstrap';
 import imageLogo from '../ImagemLivros/imageLogo.png';
 
-const LoginPage = () => {
-    const [email   , setEmail    ] = useState('');
-    const [password, setPassword ] = useState('');
-    const [error   , setError    ] = useState('');
-    const [sucess  , setSucess   ] = useState('');
-
+const RegisterPage = () => {
     return (
         <Container className="bg-dark">
             <Row className="justify-content-md-center pt-5">
@@ -25,9 +19,15 @@ const LoginPage = () => {
                                 <Form.Label><b>Password</b></Form.Label>
                                 <Form.Control className="p-2" type="password" placeholder="senha123" />
                             </Form.Group>
-                            <div className="d-flex justify-content-center p-5 pt-3 pb-5">
-                                <Button className="col-sm-8 col-md-8 col-lg-12 p-3 info" variant="info" type="submit">
+                            <div className="d-flex justify-content-center p-5 pt-0 pb-2">
+                                <Button className="col-sm-8 col-md-8 col-lg-12 p-2 info" variant="info" type="submit">
                                     <b>Login</b>
+                                </Button>
+                            </div>
+                            <p className="d-flex justify-content-center">não possui cadastro?</p>
+                            <div className="d-flex justify-content-center p-5 pt-0">
+                                <Button className="col-sm-8 col-md-8 col-lg-12 p-2 info" type="submit" href="/RegisterPage">
+                                    <b>Realizar Cadastro</b>
                                 </Button>
                             </div>
                         </Form>
@@ -38,4 +38,4 @@ const LoginPage = () => {
     );
 };
 
-export default LoginPage;
+export default RegisterPage;

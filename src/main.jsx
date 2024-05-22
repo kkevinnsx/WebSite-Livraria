@@ -10,6 +10,7 @@ import HomePage from './pages/homepage.jsx';
 import Book     from './pages/book.jsx';
 import Movies   from './pages/movies.jsx';
 import LoginPage from './pages/LoginPage.jsx';
+import RegisterPage from './pages/RegisterPage.jsx';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css'
 
@@ -38,6 +39,11 @@ const router = createBrowserRouter([
   {
     path: "/LoginPage",
     element: <LoginPage />,
+  },
+  
+  {
+    path: "/RegisterPage",
+    element: <RegisterPage />,
   },
 ]);
 

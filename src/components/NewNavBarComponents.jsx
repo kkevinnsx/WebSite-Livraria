@@ -22,8 +22,11 @@ function NavScrollExample() {
                 <Nav.Link href="/Movies"   >Movies </Nav.Link>
                 <Nav.Link href="/Book"     >Book   </Nav.Link>    
         </Nav>
-        <FormLabel className="d-flex">
+        <FormLabel className="d-flex p-2 pt-0">
             <Button variant='outline-info' className='col-lg-12' href="/loginPage">Fazer login</Button>
+        </FormLabel>
+        <FormLabel className="d-flex p-2 pt-0">
+            <Button variant='outline-info' className='col-lg-12' href="/registerPage">Fazer Cadastro</Button>
         </FormLabel>
     </Navbar.Collapse>
 </Container>
