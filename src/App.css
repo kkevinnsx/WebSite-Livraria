@@ -24,3 +24,7 @@ body{
   color: black !important;
   border: 1px solid #af892f !important;
 }
+
+.info:active{
+  background-color: #af892f !important;
+}
