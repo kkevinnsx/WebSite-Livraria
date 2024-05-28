@@ -8,6 +8,7 @@ const Movies = () => {
         <>
         <CarouselFilmes>
         <Container className="bg-dark w-100">
+          
         </Container>
         </CarouselFilmes>
         </>

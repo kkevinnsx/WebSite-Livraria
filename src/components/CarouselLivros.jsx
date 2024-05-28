@@ -1,35 +1,31 @@
+import axios from 'axios';
+import React, { useState, useEffect} from 'react';
 import Carousel from 'react-bootstrap/Carousel';
-import CoralineLivro      from '../ImagemLivros/CoralineLivro.jpg';
-import FormaDaAguaLivro   from '../ImagemLivros/FormaDaAguaLivro.jpg'; 
-import HarryPotterLivros  from '../ImagemLivros/HarryPotterLivros.png'; 
-import PercyJacksonLivros from '../ImagemLivros/PercyJacksonLivros.jpg'; 
-
-
 
     function CarouselLivros() {
-      return (
-        <Carousel className='teste'>
-            <Carousel.Item c>
-                <img className= "d-block w-100 carrosel" src={FormaDaAguaLivro} />
-                <Carousel.Caption>
-                    <h3>Coraline e o Mundo Secreto</h3>
-                    <p>Data de lançamento: 13 de fevereiro de 2009</p>
-                </Carousel.Caption>
-            </Carousel.Item>
-            <Carousel.Item>
-                <img className= "d-block w-100" src={HarryPotterLivros} />
-                <Carousel.Caption>
-                    <h3>Harry Potter e a Pedra Filosofal</h3>
-                    <p>Data de lançamento: 23 de novembro de 2001</p>
-                </Carousel.Caption>
-            </Carousel.Item>
-            <Carousel.Item>
-                <img className= "d-block w-100" src={PercyJacksonLivros} />
-                <Carousel.Caption>
-                    <h3>Percy Jackson e os Olimpianos</h3>
-                    <p>Data de Lançamento: 19 de dezembro de 2023</p>
-                </Carousel.Caption>
-            </Carousel.Item>
+        const [livros, setLivros] = useState =([]);
+    
+        useEffect(() => {
+            async function buscarLivros() {
+                const response = await axios.get("http://143.198.156.185/api/home");
+                    setLivros(response.data);
+            }
+            buscarLivros();
+        }, []);
+        
+        return(
+        <Carousel className='teste'>                                                   
+            {livros.map(livro => (
+                <Carousel.Item key={livro.id}>
+                    <img className='d-block w-100 top' 
+                        src={livro.imagens[2]}
+                        alt={livro.titulo}/>
+                    <Carousel.Caption>
+                        <h3>{livro.title}</h3>
+                        <p> {livro.sinopse}</p>
+                    </Carousel.Caption>
+                </Carousel.Item>
+            ))}
         </Carousel>
       );
     }
