@@ -62,7 +62,7 @@ const RegisterPage = () => {
                             value      = {password}
                             onChange   = {(e) => setPassword(e.target.value)}/>
                         </Form.Group>
-                            
+
                         <div className="d-flex justify-content-center p-5 pt-3 pb-5">
                             <Button className="col-sm-8 col-md-8 col-lg-12 p-2 info" variant="info" type="submit">
                             <b>Cadastrar</b>

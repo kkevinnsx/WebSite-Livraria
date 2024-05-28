@@ -5,11 +5,10 @@ import CarouselLivros     from '../components/CarouselLivros';
 const Book = () => {
     return (
         <>
-    <Container className="bg-dark">
         <CarouselLivros>
-
+        <Container className="bg-dark">
+        </Container>
         </CarouselLivros>
-    </Container>
         </>
       );
     }

@@ -4,11 +4,13 @@ import FormaDaAguaLivro   from '../ImagemLivros/FormaDaAguaLivro.jpg';
 import HarryPotterLivros  from '../ImagemLivros/HarryPotterLivros.png'; 
 import PercyJacksonLivros from '../ImagemLivros/PercyJacksonLivros.jpg'; 
 
+
+
     function CarouselLivros() {
       return (
-        <Carousel className='bg-dark '>
+        <Carousel className='teste'>
             <Carousel.Item c>
-                <img className= "d-block w-100" src={CoralineLivro} />
+                <img className= "d-block w-100 carrosel" src={FormaDaAguaLivro} />
                 <Carousel.Caption>
                     <h3>Coraline e o Mundo Secreto</h3>
                     <p>Data de lançamento: 13 de fevereiro de 2009</p>

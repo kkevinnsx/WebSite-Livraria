@@ -10,7 +10,7 @@ function NavScrollExample() {
     return (
   <Navbar expand="lg" className="bg-dark text-white" data-bs-theme="dark">
     <Container>
-    <Navbar.Brand href="#">LivroFlix</Navbar.Brand>
+    <Navbar.Brand href="#"><h3>LivroFlix</h3></Navbar.Brand>
       <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
             <Nav
@@ -18,15 +18,16 @@ function NavScrollExample() {
                 style={{ maxHeight: '100px' }}
                 navbarScroll
             >
-                <Nav.Link href="/HomePage" >Home</Nav.Link>
-                <Nav.Link href="/Movies"   >Movies </Nav.Link>
-                <Nav.Link href="/Book"     >Book   </Nav.Link>    
+                <Nav.Link className= 'p-3 testLetter' href="/HomePage"><b>Home   </b></Nav.Link>
+                <Nav.Link className= 'p-3 testLetter' href="/Movies"  ><b>Movies </b></Nav.Link>
+                <Nav.Link className= 'p-3 testLetter' href="/Book"    ><b>Book   </b></Nav.Link>    
         </Nav>
         <FormLabel className="d-flex p-2 pt-0">
-            <Button variant='outline-info' className='col-lg-12' href="/loginPage">Fazer login</Button>
+            <Button variant='outline-info' className='col-lg-12 info' href="/loginPage">Fazer login</Button>
         </FormLabel>
+
         <FormLabel className="d-flex p-2 pt-0">
-            <Button variant='outline-info' className='col-lg-12' href="/registerPage">Fazer Cadastro</Button>
+            <Button variant='outline-info' className='col-lg-12 info' href="/registerPage">Fazer Cadastro</Button>
         </FormLabel>
     </Navbar.Collapse>
 </Container>

@@ -6,10 +6,10 @@ import CarouselFilmes from '../components/CarouselFilmes';
 const Movies = () => {
     return (
         <>
-        <Container className="bg-dark w-100">
         <CarouselFilmes>
-        </CarouselFilmes>
+        <Container className="bg-dark w-100">
         </Container>
+        </CarouselFilmes>
         </>
       );
     }

@@ -2,8 +2,15 @@ html{
   background-color: #222831 !important;
 }
 
+html::-webkit-scrollbar-thumb{
+border-radius: 100px;
+background: #8070d4;
+border: 6px solid rgba(0, 0, 0, 0.2);
+}
+  
 .bg-dark{
-  background-color: #222831 !important;
+  background-color: #00000000 !important;
+  z-index: 100;
 }
 
 body{
@@ -27,4 +34,25 @@ body{
 
 .info:active{
   background-color: #af892f !important;
+}
+
+.teste{
+  position: relative;
+  top: -100px;
+}
+
+.testLetter{
+  color: #f1f1f1;
+  font-size:  large;
+}
+
+.testLetter:hover{
+  color: #FFD369;
+  font-size: large;
+  text-shadow: 0 0 3px #FFD369;
+}
+
+.carrosel{
+  border-bottom-left-radius: 10%;
+  border-bottom-right-radius: 10%;
 }
