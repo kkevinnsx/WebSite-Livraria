@@ -1,12 +1,27 @@
 html{
   background-color: #222831 !important;
   overflow-x: hidden;
+  scrollbar-width: normal;
+  scrollbar-color: #777 #555;
 }
 
-html::-webkit-scrollbar-thumb{
-border-radius: 100px;
-background: #8070d4;
-border: 6px solid rgba(0, 0, 0, 0.2);
+html::-webkit-scrollbar {
+  width: .7rem;
+  height: 20px;
+
+}
+
+html::-webkit-scrollbar-thumb {
+  background-color: #7775;
+  border-radius: 5px;
+}
+
+html::-webkit-scrollbar-thumb:hover {
+  background-color: #777;
+}
+
+html::-webkit-scrollbar-track {
+  background-color: #5555;
 }
 
 .bg-dark{
@@ -58,11 +73,19 @@ body{
   border-bottom-right-radius: 10%;
 }
 
-.carta {
-  border-radius: 25px;
-  position: relative;
-  border-radius: 14px;
-  z-index: 1111;
-  overflow: hidden;
-  box-shadow: 9px 9px 20px #b8b8b836, -9px -9px 20px #b8b8b836;
+.carta{
+  padding-bottom: 0.4em;
+  background-color: #171717;
+  border: 2px solid #ffd2696e;
+  border-radius: 5px;
+  transition: .4s ease-in-out;
+}
+
+.cartaIMG{
+  max-height:  360px;
+}
+
+.carta:hover{
+  transform: scale(1.0);
+  border: 1px solid black;
 }

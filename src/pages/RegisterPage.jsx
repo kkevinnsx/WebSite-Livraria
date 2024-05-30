@@ -1,7 +1,7 @@
 import axios from 'axios';
 import React, { useState } from "react";
 import { Container, Row, Col, Form, Button } from 'react-bootstrap';
-import imageLogo from '../ImagemLivros/imageLogo.png';
+import imageLogo from '../ImagemLivros/ImageLogo.png';
 
 const RegisterPage = () => {
     const [email   , setEmail    ] = useState('');
@@ -43,7 +43,7 @@ const RegisterPage = () => {
                             onChange   = {(e) => setName(e.target.value)} />
                         </Form.Group>
                             
-                        <Form.Group className="p-5 pt-0 pb-1">
+                        <Form.Group className="p-5 pt-0 pb-2">
                             <Form.Label><b>Email</b></Form.Label>
                             <Form.Control
                             className  = "p-2"

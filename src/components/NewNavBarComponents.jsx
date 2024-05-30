@@ -5,12 +5,13 @@ import Form from 'react-bootstrap/Form';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
+import logo from '../ImagemLivros/ImageLogo.png';
 
 function NavScrollExample() {
     return (
-  <Navbar expand="lg" className="bg-dark text-white" data-bs-theme="dark">
+  <Navbar expand="lg" className="bg-dark text-white " data-bs-theme="dark">
     <Container>
-    <Navbar.Brand href="#"><h3>LivroFlix</h3></Navbar.Brand>
+    <Navbar.Brand href="/HomePage"><h3>LivroFlix</h3></Navbar.Brand>
       <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
             <Nav
@@ -18,7 +19,6 @@ function NavScrollExample() {
                 style={{ maxHeight: '100px' }}
                 navbarScroll
             >
-                <Nav.Link className= 'p-3 testLetter' href="/HomePage"><b>Home   </b></Nav.Link>
                 <Nav.Link className= 'p-3 testLetter' href="/Movies"  ><b>Movies </b></Nav.Link>
                 <Nav.Link className= 'p-3 testLetter' href="/Book"    ><b>Book   </b></Nav.Link>    
         </Nav>

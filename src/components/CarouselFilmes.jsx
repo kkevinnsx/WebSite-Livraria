@@ -8,12 +8,8 @@ function CarouselFilmes() {
 
     useEffect(() => {
         async function buscarFilmes() {
-            try {
-                const response = await axios.get("http://143.198.156.185/api/home");
+                const response = await axios.get("http://143.198.156.185/api/filmes");
                 setFilmes(response.data);
-            } catch (error) {
-                console.error("Erro ao buscar filmes:", error);
-            }
         }
         buscarFilmes();
     }, []);
@@ -38,9 +34,11 @@ function CarouselFilmes() {
                 {filmes.map((filme, index) => (
                     <Col xs={6} sm={4} md={3} lg={2} key={index}>
                         <Card className='carta'>
-                            <Card.Img src={filme.url_thumbnail} />
+                            <Card.Img className="cartaIMG" src={filme.url_thumbnail} />
                             <Card.Body>
                                 <Card.Title>{filme.titulo}</Card.Title>
+                                <Card.Subtitle className='pb-2'>Categoria: {filme.categoria}</Card.Subtitle>
+                                <Card.Subtitle className='pb-2'>N° de Favoritos: {filme.qtd_favoritos}</Card.Subtitle>
                             </Card.Body>
                         </Card>
                     </Col>
