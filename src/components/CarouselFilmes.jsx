@@ -17,10 +17,10 @@ function CarouselFilmes() {
     return (
         <>
             <Carousel className='teste'>
-                {filmes.map(filme => (
+                {filmes.map((filme) => (
                     <Carousel.Item key={filme.id}>
                         <img className="d-block w-100 top"
-                            src={filme.imagens[2]}
+                            src={filme.url}
                             alt={filme.titulo} />
                         <Carousel.Caption>
                             <h3>{filme.title}</h3>
