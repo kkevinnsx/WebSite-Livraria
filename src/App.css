@@ -6,9 +6,8 @@ html{
 }
 
 html::-webkit-scrollbar {
-  width: .7rem;
+  width: .5rem;
   height: 20px;
-
 }
 
 html::-webkit-scrollbar-thumb {
@@ -31,25 +30,25 @@ html::-webkit-scrollbar-track {
 
 body{
   background-color: #222831 !important;
-  color: white;
+  color: #00ADB5;
 }
 
 .card{
-  background-color: #333a4444;
-  border: 3px solid #FFD369;
-  border-radius: 25px;
+  background-color: #222831;
+  border: 3px solid #00ADB5;
+  border-radius: 20px;
   color:white;
   backdrop-filter: blur(5px) !important;
 }
 
 .info{
-  background-color: #FFD369 !important;
+  background-color: #00FFF5 !important;
   color: black !important;
-  border: 1px solid #af892f !important;
+  border: 1px solid #00ADB5 !important;
 }
 
 .info:active{
-  background-color: #af892f !important;
+  background-color: #00ADB5 !important;
 }
 
 .teste{
@@ -63,9 +62,8 @@ body{
 }
 
 .testLetter:hover{
-  color: #FFD369;
+  color: #00FFF5;
   font-size: large;
-  text-shadow: 0 0 3px #FFD369;
 }
 
 .carrosel{
@@ -76,16 +74,31 @@ body{
 .carta{
   padding-bottom: 0.4em;
   background-color: #171717;
-  border: 2px solid #ffd2696e;
+  border: 2px solid #00FFF5;
   border-radius: 5px;
   transition: .4s ease-in-out;
 }
 
 .cartaIMG{
-  max-height:   22.6rem;
+  max-height:   22.4rem;
 }
 
 .carta:hover{
   transform: scale(1.0);
-  border: 1px solid black;
+  border: 1px solid #00ADB5;
+}
+
+.link{
+  text-decoration: none;
+}
+
+.cardInfo{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cardInfo, .cardImg{
+  align-items: center;
+  max-width: 34rem;
 }

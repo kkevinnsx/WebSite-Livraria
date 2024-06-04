@@ -13,6 +13,8 @@ import LoginPage from './pages/LoginPage.jsx';
 import RegisterPage from './pages/RegisterPage.jsx';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css'
+import Filmes from './pages/Filmes.jsx';
+import Livros from './pages/Livros.jsx';
 
 
 const router = createBrowserRouter([
@@ -44,6 +46,16 @@ const router = createBrowserRouter([
   {
     path: "/RegisterPage",
     element: <RegisterPage />,
+  },
+  
+  {
+    path: "/Filmes/:id",
+    element: <Filmes/>
+  },
+
+  {
+    path: "/Livros/:id",
+    element: <Livros/>
   },
 ]);
 

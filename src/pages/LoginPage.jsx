@@ -1,7 +1,7 @@
 import axios from 'axios';
 import React, { useState } from "react";
 import { Container, Row, Col, Form, Button } from 'react-bootstrap';
-import imageLogo from '../ImagemLivros/ImageLogo.png';
+import imageLogo from '../ImagemLivros/imageLogo.png';
 
 const LoginPage = () => {
     const [email   , setEmail    ] = useState('');
